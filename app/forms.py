@@ -118,6 +118,7 @@ class ApplicationForm(FlaskForm):
                            validators=[DataRequired()])
     experience = IntegerField('Professional Experience in years',
                               validators=[DataRequired()])
+    
     cv = FileField('Update Resume', validators=[FileAllowed(['jpg', 'png', 'bmp'])])
     cover_letter = TextAreaField('Cover Letter',
                                  validators=[DataRequired()])
